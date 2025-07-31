@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Bonface Kibuchi | Portfolio Website</title>
+</head>
+
+<body>
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
+  <header class="header">
+    <div class="menu-btn-container">
+      <div class="container">
+        <button type="button" class="menu-btn">menu</button>
+      </div>
+    </div>
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#work">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contact</a>
+        </li>
+      </ol>
+    </nav>
+    <!-- Hero section -->
+    <div class="container">
+      <div class="hero-section">
+        <div class="header-textbox">
+          <h1 class="h1">
+            <span>Hi, I'm Bonface Kibuchi</span>
+            <!-- <span>Frontend Web Developer</span> -->
+          </h1>
+          <!-- Intro Paragraph -->
+          <p class="header-text">
+            I'm a final-year Pharmacy student passionate about using technology to improve healthcare systems. With a
+            growing skill set in Python and web development, I aim to build solutions that make medical services smarter
+            and more accessible.
+          </p>
+          <div class="header-btns">
+            <a href="assets/Kibuchi CV.pdf" download class="btn btn-cta">Download CV</a>
+            <a href="#work" class="btn btn-secondary see-work">See my work</a>
+          </div>
+        </div>
+        <div class="blob-shape">
+          <img src="assets/images/hero.webp" alt="Bonface Kibuchi">
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </header>
+  <main>
+    <section class="work">
+      <div class="container">
+        <h2 class="h2" id="work">Selected Work</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">DevX</h3>
+              <p class="work-text">
+                A free to use, minimal and accessible portfolio template for
+                developers.
+              </p>
+              <ol class="work-technologies">
+                <li>React</li>
+                <li>Gatsby</li>
+                <li>SCSS</li>
+                <li>MDX</li>
+              </ol>
+              <div class="work-links">
+                <a href="https://github.com/Kibuchi92" target="_blank" class="link">Explore this project</a>
+                <a href="https://github.com/Kibuchi92" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/portfolio-template.webp" alt="agency elevation">
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">Agency Elevation</h3>
+              <p class="work-text">Website for Agency Elevation.</p>
+              <ol class="work-technologies">
+                <li>React</li>
+                <li>Gatsby</li>
+                <li>Material UI</li>
+              </ol>
+              <div class="work-links">
+                <a href="https://github.com/Kibuchi92" target="_blank" class="link">Explore this project</a>
+                <a href="https://github.com/Kibuchi92" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/agency-elevation.webp" alt="portfolio template">
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">contribute.dev</h3>
+              <p class="work-text">
+                Website for DevX A dedicated space for developer experience
+              </p>
+              <ol class="work-technologies">
+                <li>Ruby</li>
+                <li>SvelteKit</li>
+                <li>Emotion</li>
+              </ol>
+              <div class="work-links">
+                <a href="https://github.com/Kibuchi92" target="_blank" rel="noopener" class="link">Explore this
+                  project</a>
+                <a href="https://github.com/Kibuchi92" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy">
+                </a>
+              </div>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/work/contribute-dev.webp" alt="contribute dev">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container about-container">
+        <h2 class="h2">About Me</h2>
+        <h4>Introduction</h4>
+        <p>
+          I'm Bonface Kibuchi, a final-year Bachelor of Pharmacy student at the University of Nairobi, passionate about
+          using technology to transform healthcare. My journey has blended pharmaceutical knowledge with an expanding
+          interest in digital health and software development.
+        </p>
+        <h4>Programming Languages</h4>
+        <p>
+          I’m currently learning and working with Python, along with some HTML, CSS, and JavaScript to build
+          foundational web and data tools.
+        </p>
+        <h4>Educational Background</h4>
+        <p>
+          I'm pursuing a Bachelor of Pharmacy at the University of Nairobi, with hands-on experience from internships at
+          Malibu Pharmacy, Kerugoya County Referral Hospital, and Nerix Pharma Industry. My education is backed by
+          coursework in Pharmacology, Clinical Pharmacy, and Pharmaceutical Chemistry. You can
+          <a href="assets/Kibuchi CV.pdf" class="link">download my CV here</a>
+          .
+        </p>
+        <h4>Interests</h4>
+        <p>
+          I'm driven by a desire to improve health outcomes through technology. My interests include digital health
+          systems, public health innovation, health data literacy, and open-source solutions in healthcare.
+        </p>
+        <h4>Projects</h4>
+        <p>
+          I’ve taken part in tech-health events like the Tech & Health Innovation Week at UoN, and I’m currently
+          exploring how programming can help streamline pharmacy workflows and community outreach efforts. More of my
+          coding projects and ideas will be shared soon.
+        </p>
+        <h4>Contact</h4>
+        <p>
+          I'm open to collaboration, mentorship, and project opportunities related to health and tech. Feel free to
+          <a href="#contact" class="link">reach out through the contact form</a>
+          below.
+        </p>
+      </div>
+    </section>
+    <section class="article">
+      <div class="container">
+        <h2 class="h2" id="blog">My Articles</h2>
+        <div class="article-boxes">
+          <article class="article-box featured-article">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h3">5 CSS Tricks I Use in Every Project</h3>
+                <p class="article-text">
+                  These simple but powerful CSS tips help me write cleaner code and build better layouts — especially
+                  for responsive designs.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="#" class="link">Continue reading</a>
+                <span class="reaction-count">
+                  <img src="./assets/images/heart-outline.svg" alt="heart">
+                  122
+                </span>
+              </div>
+            </div>
+            <picture class="article-illustration">
+              <img src="assets/images/featured-blog.webp" alt="Laptop with code editor" loading="lazy">
+            </picture>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">Understanding JavaScript Function Parameters</h3>
+                <p class="article-text">
+                  A quick overview of default parameters in JavaScript and how they can simplify your code when handling
+                  optional inputs.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="#" class="link">Continue reading</a>
+                <span class="reaction-count">
+                  <img src="./assets/images/heart-outline.svg" alt="heart" loading="lazy">
+                  47
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">How I Built My First Portfolio from Scratch</h3>
+                <p class="article-text">
+                  A behind-the-scenes look at how I created this site using only HTML, CSS, and JavaScript — no
+                  frameworks, just learning by doing.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="#" class="link">Continue reading</a>
+                <span class="reaction-count">
+                  <img src="./assets/images/heart-outline.svg" alt="heart" loading="lazy">
+                  83
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <h3 class="h4">HTML Basics I Wish I Knew Earlier</h3>
+                <div class="article-text">
+                  These beginner-friendly tips helped me understand HTML structure better and build more accessible,
+                  maintainable websites.
+                </div>
+              </div>
+              <div class="article-info">
+                <a href="#" class="link">Continue reading</a>
+                <span class="reaction-count">
+                  <img loading="lazy" src="./assets/images/heart-outline.svg" alt="heart">
+                  68
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="skills">
+      <div class="container">
+        <h2 class="h2" id="skills">My Toolkit</h2>
+        <div class="skills-imgs">
+          <img src="assets/images/skills/html.webp" alt="html" class="skills-img" loading="lazy" title="React">
+          <img src="assets/images/skills/js.webp" alt="javascript" class="skills-img" loading="lazy" title="Svelte">
+          <img src="assets/images/skills/python.webp" alt="Git" class="skills-img" loading="lazy" title="Typescript">
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h2 class="h2" id="contact">Send Message</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              Available for hire
+            </strong>
+            <p class="contact-text">
+              As a frontend web developer, I craft user-friendly web interfaces with a focus on clean design,
+              accessibility, and performance. I enjoy building things from the ground up and turning ideas into smooth,
+              functional experiences.
+            </p>
+
+            <!-- Replace src with your signatures and name -->
+            <img src="assets/images/signatures.png" alt="Signature" class="signatures" loading="lazy">
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required inputmode="email">
+            </div>
+            <div class="form-field">
+              <label for="message">How can I help you?</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-cta">Send</button>
+          </form>
+          
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Update href and src attributes -->
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="GitHub" href="https://github.com/Kibuchi92" target="_blank" rel="noopener">
+                <img loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub">
+              </a>
+            </li>
+            <li class="footer-link">
+              <a title="Linkedin"
+                href="https://www.linkedin.com/in/bonface-kibuchi-159a0123b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank" rel="noopener">
+                <img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin">
+              </a>
+            </li>
+            <li class="footer-link">
+              <a title="Twitter" href="https://x.com/Mr_Kibuchi?t=aywc_2kZdt6tVjYqeHi1Ig&s=09" target="_blank"
+                rel="noopener">
+                <img loading="lazy" src="assets/images/social-links/twitter.svg" alt="Twitter">
+              </a>
+            </li>
+          </ol>
+        </nav>
+        <p class="footer-text">
+          &copy;
+          <span id="year"></span>
+          All Rights reserved
+          <a target="_blank" rel="noopener" href="#" class="link">Bonface Kibuchi</a>
+        </p>
+        <label class="theme-switch" for="theme-switch">
+          <span>Dark Theme</span>
+          <input type="checkbox" id="theme-switch" role="switch">
+        </label>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init({
+        publicKey: "_RQbmYkRtPGYWCqmH",
+      });
+    })();
+  </script>
+</body>
+
+</html>
