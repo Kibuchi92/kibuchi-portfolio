@@ -7,7 +7,7 @@ This is the personal portfolio website of **Bonface Kibuchi**, a final-year Bach
 ---
 
 ## 🌐 Live Demo  
-🔗 [Visit the Portfolio](https://kibuchi.github.io/kibuchi-portfolio)
+🔗 [Visit the Portfolio](https://kibuchi92.github.io/kibuchi-portfolio/)
 
 ---
 
